@@ -1,14 +1,12 @@
-# python-practice-library
+# python-lab-sessions
 Python tasks completed for IT7522 Software Development Fundamentals.
 
-# LAB SESSIONS – Programming Coursework
-
-This repository contains my programming practice and weekly lab work for my Level 5 IT certificate.  
-Each week focuses on a different programming concept, and the code is organised into folders for clarity.
+This repository contains python practice for my Level 5 IT certificate.  
+Each week focuses on a different programming concept. The code is organised into folders for clarity.
 
 ## Repository Structure
 
-- **Week 4 – Functions**
+  - **Week 4 – Functions**
   - Practice exercises using `def`, parameters, return values, and breaking programs into logical sections.
   - Includes a small project demonstrating multiple functions working together.
 
