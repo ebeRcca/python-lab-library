@@ -13,9 +13,10 @@ This mini‑project practised basic OOP concepts by modelling a simple banking s
 - **Transaction** – stores transaction information such as amount and type.
 
 ### Methods Practised
-- `deposit(amount)` – adds money to the account.
-- `withdraw(amount)` – removes money if sufficient balance is available.
-- `display_balance()` – prints the current balance.
+- deposit(amount) – adds money to the account.
+- withdraw(amount) – removes money if sufficient balance is available.
+- display_balance() – prints the current balance.
+
 
 ### What I Learned
 - How to design classes that represent real‑world objects.
@@ -33,10 +34,10 @@ A second OOP exercise involved building a basic library system using three class
 - **Library** – manages collections of books and members, and handles borrowing and returning.
 
 ### Methods Practised
-- `add_book()` – adds a book to the library.
-- `borrow_book()` – marks a book as borrowed and assigns it to a member.
-- `return_book()` – marks a book as available again.
-- `display_books()` – lists all books with their availability status.
+- add_book() – adds a book to the library.
+- borrow_book() – marks a book as borrowed and assigns it to a member.
+- return_book() – marks a book as available again.
+- display_books() – lists all books with their availability status.
 
 ### Peer Review
 As part of the lab session:
