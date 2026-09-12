@@ -1,164 +1,58 @@
-OOP Practice Sessions
-1. Overview
-This folder contains two beginner‑level Python programs:
+# OOP Practice Programs
 
-Simple Banking System
+## Overview
 
-Simple Library System
+This folder contains two Python programs I wrote while learning the basics of object‑oriented programming (OOP). Each program uses simple classes, attributes, and methods to build a basic system. T
 
-These programs were written as practice exercises for my IT certificate course to learn object‑oriented programming (OOP) and basic software design principles. They model small real‑world systems using classes, objects, attributes, and methods.
+## Programs Included
 
-2. What’s in this folder
-Banking System
-A simple program that lets a user:
+### 1. Banking System
+A simple program that allows a user to:
+- create an account  
+- deposit money  
+- withdraw money  
+- check their balance  
 
-create an account
+It uses a basic `Account` class with attributes for storing balance and methods for updating it.
 
-deposit money
-
-withdraw money
-
-check their balance
-
-It uses classes like Account, Transaction, and a basic controller to manage actions.
-
-Library System
+### 2. Library System
 A small program that lets a user:
+- add books to the library  
+- register members  
+- borrow and return books for members 
 
-add books
+It uses classes such as `Book`, `Member`, and `Library` to organise the system’s data and actions.
 
-register members
+## Purpose
 
-borrow and return books
+I selected these programs to explain how software design principles are demonstrated in my code. Both programs provide clear examples of basic OOP structure and how classes interact within a system.
 
-track availability
+## Software Design Principles Demonstrated
 
-It uses classes such as Book, Member, and Library.
+### Modularity
+Modularity refers to breaking a program into smaller, independent modules. In these programs, each module has a clear responsibility. For example, classes: `Account` - manages balance information, `Book` - stores single book details, and `Member` - stores member information. This separation makes the system easier to understand and maintain.
 
-Each program runs on its own and is designed to show beginner‑level OOP structure.
+### Cohesion
+Cohesion describes how closely related the elements of a module are. In these programs, classes such as `Account`, `Book`, and `Member` show high cohesion because the attributes and methods inside each class relate to the same area of responsibility. The `Library` class has lower cohesion because it combines several areas of responsibility—managing books, members, and borrowing — although all of these still relate to the overall purpose of coordinating the library system. This is common in small beginner programs where one class handles the main system operations.
 
-3. Purpose of the Programs
-These programs were part of learning exercises to help practise:
+### Coupling
+Coupling refers to how dependent modules are on each other. These programs demonstrate low coupling because classes interact through simple method calls rather than accessing each other’s internal data. The `Library` class communicates with `Book` and `Member` objects by calling their methods, which reduces interdependence and makes the system easier to update or modify.
 
-designing classes and methods
+### Abstraction
+Abstraction hides unnecessary details and exposes only what is needed. Methods such as `deposit()`, `withdraw()`, `borrow_book()`, and `return_book()` provide clear actions without requiring the user to understand how the data is stored or updated internally. This keeps the interface simple and reduces complexity for anyone using the program.
 
-applying OOP concepts
+### Encapsulation
+Encapsulation bundles data and behaviour together while restricting direct access to internal details. Attributes such as account balances or book availability are stored inside classes and changed only through methods. This prevents accidental modification and ensures that each class controls how its own data is managed.
 
-using software design principles
+### KISS (Keep It Simple)
+The KISS principle encourages keeping code simple and avoiding unnecessary complexity. These programs follow KISS by using straightforward logic, clear method names, and easy‑to‑follow class structures. Each action—such as borrowing a book or depositing money—is implemented in a simple, readable way.
 
-organising code into small, clear parts
-
-modelling simple systems
-
-They are prototypes, not full applications.
-
-4. Software Design Principles Used
-To keep the code organised and easy to follow, I used common software design principles. These helped shape how the classes were structured and how they interact.
-
-Modularity
-Each system is split into small classes:
-
-Banking: Account, Transaction  
-Library: Book, Member, Library
-
-This keeps the code tidy and easier to update.
-
-Cohesion
-Each class has one job:
-
-Account handles balances
-
-Transaction handles deposits/withdrawals
-
-Book stores book details
-
-Member manages borrowing
-
-Library coordinates everything
-
-This makes the code easier to understand.
-
-Coupling
-The classes interact without depending too heavily on each other.
-For example, Transaction uses an Account, but doesn’t change how the account works internally.
-This makes changes safer and easier.
-
-Abstraction
-Methods hide the internal details.
-For example, deposit() and borrow_book() handle the logic inside the class so the user only sees the simple interface.
-
-Encapsulation
-Important data (like balances or borrowed books) is stored inside the class and only changed through methods.
-This protects the data and keeps things consistent.
-
-5. Why These Principles Help
-Using these principles made both programs:
-
-easier to read
-
-easier to update
-
-easier to extend later
-
-less likely to break when changes are made
-
-It also helped me understand how OOP structure supports real‑world systems.
-
-6. Program Summaries
-Simple Banking System
-Features:
-
-create an account
-
-deposit and withdraw
-
-view balance
-
-Shows:
-
-class interaction
-
-state changes
-
-simple transaction logic
-
-Simple Library System
-Features:
-
-add books
-
-register members
-
-borrow/return books
-
-track availability
-
-Shows:
-
-object relationships
-
-list management
-
-borrowing rules
-
-7. Reflection
-Working on these two small systems helped me understand how OOP and software design principles fit together. Breaking the programs into classes made everything easier to manage, and using principles like modularity, cohesion, and encapsulation helped me keep the code organised. It also made me more confident writing beginner‑level Python programs that follow a clear structure.
-
-8. How to Run
-Install Python 3
-
-Download the folder
-
-Run each program using:
-
-Code
-python banking_system.py
-python library_system.py
-9. References
-Software Design Principles Resource  
-Institute of Data – Software Design Principles: Creating Improved System Designs  
-https://www.institutedata.com/nz/blog/software-design-principles-creating-improved-system-designs/
-
-README Writing Resource  
-Make a README – A guide to writing clear and effective README files  
-https://www.makeareadme.com/
+### Separation of Concerns
+Separation of Concerns means dividing a system so each class handles a different responsibility. These programs demonstrate this clearly:
+- `Account` handles money
+- `Book` handles book data
+- `Member` handles member information
+- `Library` coordinates borrowing, returning, and managing collections
+  
+### Reusability
+Reusability refers to designing classes that can be used in other programs. Classes such as Account, Book, and Member are reusable because they contain self‑contained logic and do not depend on specific program details. They could be used in other banking or library systems with little modification.
