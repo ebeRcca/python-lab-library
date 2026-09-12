@@ -6,7 +6,7 @@ Simple Banking System
 
 Simple Library System
 
-Both programs were created to practise object‑oriented programming (OOP) and basic software design principles. They model small real‑world systems using classes, objects, attributes, and methods.
+These programs were written as practice exercises for my IT certificate course to learn object‑oriented programming (OOP) and basic software design principles. They model small real‑world systems using classes, objects, attributes, and methods.
 
 2. What’s in this folder
 Banking System
